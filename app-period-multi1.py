@@ -38,14 +38,14 @@ st.text('４．商品アイテム別の需要データをcsvファイルでア�
 st.text('５．商品アイテム別に容積(m3)、重量(kg)、価格(円)、欠品コスト(円)、発注先をcsvファイルでアップロードすることができます。')
 st.text('６．トラック車種別／発注先別の車建て輸送料金をcsvファイルでアップロードすることができます。')
 st.text('７．倉庫への入庫単価(円/m3)と保管単価(円/m3･日)を設定することができます。')
-st.text('８．物流コストは発注先別の他、日別／商品アイテム別にも閲覧／データダウンロードできます。')
-st.text('９．全商品アイテムの在庫推移をグラフで閲覧することができます。')
+st.text('８．各物流コストの計算根拠を発注先別の他、日別／商品アイテム別にも表示／データダウンロードできます。')
+st.text('９．全商品アイテムの在庫推移をインタラクティブなグラフで表示します。')
+st.text(' ')
 st.text('詳細な使い方については下記サイトをご覧下さい↓')
 st.link_button(":blue[:link:【これは便利！】適正発注を行った場合のトータル調達物流コストを計算するアプリ|ロジギーク]", 
                "https://rikei-logistics.com/app-multi-sku1")
 
 # データの読み込みとパラメータの設定
-st.text('')
 st.sidebar.header('◆条件設定画面◆')
 st.sidebar.subheader('１．需要データの読み込み')
 uploaded_file = st.sidebar.file_uploader('需要データをアップロードして下さい。',type='csv')
@@ -120,6 +120,7 @@ storage_cost = st.sidebar.number_input(label = '単価（円／M3･日）',
                                      min_value=0, max_value=1000)
 
 #　読み込みデータの表示
+st.text(' ')
 st.subheader('読み込みデータ一覧', divider='rainbow')
 st.subheader(':mag:需要データ')
 st.write('アイテム数　：', f':orange[{raw_df0.shape[1]}個]')
