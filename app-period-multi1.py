@@ -28,7 +28,7 @@ st.link_button(':blue[:link:ロジギークのHPへ]',
                'https://rikei-logistics.com/',
                 use_container_width = True)
 
-st.header(':blue[適正発注を行った場合のトータル物流コストを算出するアプリ]')
+st.header(':blue[適正発注を行った場合のトータル物流コストを計算するアプリ]')
 st.text('')
 st.subheader('このアプリでできること', divider='rainbow')
 st.text('１．安全在庫理論に基づく定期発注を行った場合のトータル調達物流コストを算出します。')
@@ -41,7 +41,7 @@ st.text('７．倉庫への入庫単価(円/m3)と保管単価(円/m3･日)を�
 st.text('８．物流コストは発注先別の他、日別／商品アイテム別にも閲覧／データダウンロードできます。')
 st.text('９．全商品アイテムの在庫推移をグラフで閲覧することができます。')
 st.text('詳細な使い方については下記サイトをご覧下さい↓')
-st.link_button(":blue[:link:適正発注を行った場合のトータル調達物流コストをシミュレーションするアプリ|ロジギーク]", 
+st.link_button(":blue[:link:【これは便利！】適正発注を行った場合のトータル調達物流コストを計算するアプリ|ロジギーク]", 
                "https://rikei-logistics.com/app-multi-sku1")
 
 # データの読み込みとパラメータの設定
